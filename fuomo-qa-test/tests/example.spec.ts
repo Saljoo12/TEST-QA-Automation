@@ -8,19 +8,15 @@ test.describe('Fuomo Homepage Tests', () => {
     homePage = new HomePage(page);
   });
 
-  // Scenario 1 – Page Loads Successfully
   test('Homepage loads successfully with status 200 and title', async ({ page }) => {
     const response = await homePage.goto();
     
-    // Verifikasi HTTP response status 200
     expect(response?.status()).toBe(200);
     
-    // Verifikasi title tidak kosong
     const title = await page.title();
     expect(title).not.toBe('');
   });
 
-  // Scenario 2 – Validasi Elemen UI Utama
   test('Main UI elements are visible', async () => {
     await homePage.goto();
     
@@ -30,14 +26,11 @@ test.describe('Fuomo Homepage Tests', () => {
     await expect(homePage.footer).toBeVisible();
   });
 
-  // Scenario 3 – Navigation Link Berfungsi
   test('Navigation link works correctly', async ({ page }) => {
     await homePage.goto();
     
-    // Klik menu navigasi (misal: tombol/link Login atau About)
     await homePage.loginLink.click();
     
-    // Verifikasi halaman berpindah (sesuaikan URL ekspektasinya)
     await expect(page).toHaveURL(/.*login/); 
   });
 });
