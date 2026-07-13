@@ -1,0 +1,389 @@
+<testsuites id="" name="" tests="6" failures="2" skipped="0" errors="1" time="93.213067">
+<testsuite name="example.spec.ts" timestamp="2026-07-13T20:14:53.370Z" hostname="Desktop Chrome" tests="3" failures="1" skipped="0" time="65.05" errors="0">
+<testcase name="Fuomo Homepage Tests › Homepage loads successfully with status 200 and title" classname="example.spec.ts" time="12.342">
+</testcase>
+<testcase name="Fuomo Homepage Tests › Main UI elements are visible" classname="example.spec.ts" time="40.292">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome\error-context.md]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry1\trace.zip]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry2\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [Desktop Chrome] › example.spec.ts:24:7 › Fuomo Homepage Tests › Main UI elements are visible ────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.logo')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.logo')
+
+
+      25 |     await homePage.goto();
+      26 |     
+    > 27 |     await expect(homePage.logo).toBeVisible();
+         |                                 ^
+      28 |     await expect(homePage.navMenu).toBeVisible();
+      29 |     await expect(homePage.heroBanner).toBeVisible();
+      30 |     await expect(homePage.footer).toBeVisible();
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:27:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.logo')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.logo')
+
+
+      25 |     await homePage.goto();
+      26 |     
+    > 27 |     await expect(homePage.logo).toBeVisible();
+         |                                 ^
+      28 |     await expect(homePage.navMenu).toBeVisible();
+      29 |     await expect(homePage.heroBanner).toBeVisible();
+      30 |     await expect(homePage.footer).toBeVisible();
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:27:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.logo')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.logo')
+
+
+      25 |     await homePage.goto();
+      26 |     
+    > 27 |     await expect(homePage.logo).toBeVisible();
+         |                                 ^
+      28 |     await expect(homePage.navMenu).toBeVisible();
+      29 |     await expect(homePage.heroBanner).toBeVisible();
+      30 |     await expect(homePage.footer).toBeVisible();
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:27:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Desktop-Chrome-retry2\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Fuomo Homepage Tests › Navigation link works correctly" classname="example.spec.ts" time="12.416">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2026-07-13T20:14:53.370Z" hostname="Mobile Safari" tests="3" failures="1" skipped="0" time="137.541" errors="1">
+<testcase name="Fuomo Homepage Tests › Homepage loads successfully with status 200 and title" classname="example.spec.ts" time="11.243">
+</testcase>
+<testcase name="Fuomo Homepage Tests › Main UI elements are visible" classname="example.spec.ts" time="35.037">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari\error-context.md]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry1\trace.zip]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry2\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [Mobile Safari] › example.spec.ts:24:7 › Fuomo Homepage Tests › Main UI elements are visible ─────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.logo')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.logo')
+
+
+      25 |     await homePage.goto();
+      26 |     
+    > 27 |     await expect(homePage.logo).toBeVisible();
+         |                                 ^
+      28 |     await expect(homePage.navMenu).toBeVisible();
+      29 |     await expect(homePage.heroBanner).toBeVisible();
+      30 |     await expect(homePage.footer).toBeVisible();
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:27:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.logo')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.logo')
+
+
+      25 |     await homePage.goto();
+      26 |     
+    > 27 |     await expect(homePage.logo).toBeVisible();
+         |                                 ^
+      28 |     await expect(homePage.navMenu).toBeVisible();
+      29 |     await expect(homePage.heroBanner).toBeVisible();
+      30 |     await expect(homePage.footer).toBeVisible();
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:27:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.logo')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.logo')
+
+
+      25 |     await homePage.goto();
+      26 |     
+    > 27 |     await expect(homePage.logo).toBeVisible();
+         |                                 ^
+      28 |     await expect(homePage.navMenu).toBeVisible();
+      29 |     await expect(homePage.heroBanner).toBeVisible();
+      30 |     await expect(homePage.footer).toBeVisible();
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:27:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Main-UI-elements-are-visible-Mobile-Safari-retry2\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Fuomo Homepage Tests › Navigation link works correctly" classname="example.spec.ts" time="91.261">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari\error-context.md]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry1\trace.zip]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry2\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded." type="Error">
+<![CDATA[  [Mobile Safari] › example.spec.ts:34:7 › Fuomo Homepage Tests › Navigation link works correctly ──
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('a:has-text("Login")')
+        - locator resolved to <a href="/login" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 py-2 hover-pop h-10 rounded-full border border-[#DD4A62] bg-white px-5 font-semibold text-[#DD4A62] shadow-[3px_3px_0_0_#A5A5A9] hover:bg-[#DD4A62]/10 hover…>Login</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        23 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      36 |     
+      37 |     // Klik menu navigasi (misal: tombol/link Login atau About)
+    > 38 |     await homePage.loginLink.click();
+         |                              ^
+      39 |     
+      40 |     // Verifikasi halaman berpindah (sesuaikan URL ekspektasinya)
+      41 |     await expect(page).toHaveURL(/.*login/); 
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:38:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('a:has-text("Login")')
+        - locator resolved to <a href="/login" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 py-2 hover-pop h-10 rounded-full border border-[#DD4A62] bg-white px-5 font-semibold text-[#DD4A62] shadow-[3px_3px_0_0_#A5A5A9] hover:bg-[#DD4A62]/10 hover…>Login</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        36 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+
+
+      36 |     
+      37 |     // Klik menu navigasi (misal: tombol/link Login atau About)
+    > 38 |     await homePage.loginLink.click();
+         |                              ^
+      39 |     
+      40 |     // Verifikasi halaman berpindah (sesuaikan URL ekspektasinya)
+      41 |     await expect(page).toHaveURL(/.*login/); 
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:38:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('a:has-text("Login")')
+        - locator resolved to <a href="/login" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 py-2 hover-pop h-10 rounded-full border border-[#DD4A62] bg-white px-5 font-semibold text-[#DD4A62] shadow-[3px_3px_0_0_#A5A5A9] hover:bg-[#DD4A62]/10 hover…>Login</a>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+        - waiting 20ms
+        2 × waiting for element to be visible, enabled and stable
+          - element is not visible
+        - retrying click action
+          - waiting 100ms
+        36 × waiting for element to be visible, enabled and stable
+           - element is not visible
+         - retrying click action
+           - waiting 500ms
+        - waiting for element to be visible, enabled and stable
+
+
+      36 |     
+      37 |     // Klik menu navigasi (misal: tombol/link Login atau About)
+    > 38 |     await homePage.loginLink.click();
+         |                              ^
+      39 |     
+      40 |     // Verifikasi halaman berpindah (sesuaikan URL ekspektasinya)
+      41 |     await expect(page).toHaveURL(/.*login/); 
+        at C:\xampp\htdocs\fuomo-qa-test\fuomo-qa-test\tests\example.spec.ts:38:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\example-Fuomo-Homepage-Tests-Navigation-link-works-correctly-Mobile-Safari-retry2\error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>
